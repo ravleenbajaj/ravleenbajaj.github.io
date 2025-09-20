@@ -1,7 +1,8 @@
-# config.yaml - Essential Hugo configuration
+# Hugo configuration file
 title: "Your Name - Resume"
-baseURL: "https://ravleenbajaj.github.io"
+baseURL: "https://ravleenbajaj.github.io/"
 languageCode: "en-us"
+defaultContentLanguage: "en"
 
 # Hugo Blox Builder Configuration
 module:
@@ -50,3 +51,22 @@ menu:
     - name: Contact
       url: '#contact'
       weight: 60
+
+# Markup configuration
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    lineNos: false
+    style: github
+    lineNumbersInTable: false
+
+# Hugo version
+hugo:
+  version: "0.120.4"
+
+# Enable section
+enableRobotsTXT: true
+canonifyURLs: false
+relativeURLs: false
