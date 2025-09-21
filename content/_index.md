@@ -40,6 +40,7 @@ sections:
 
         Please reach out to collaborate 😃
     design:
+      css_class: hbx-bg-gradient
     spacing:
       padding: ["60px", "0", "20px", "0"]
       margin: ["40px", "0", "0", "0"]
