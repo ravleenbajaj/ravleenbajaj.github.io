@@ -39,6 +39,10 @@ sections:
         I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
 
         Please reach out to collaborate 😃
+    design:
+    spacing:
+      padding: ["60px", "0", "20px", "0"]
+      margin: ["40px", "0", "0", "0"]
   #  design:
   #    columns: '1'
   # - block: collection
