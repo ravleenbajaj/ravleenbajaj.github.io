@@ -36,16 +36,16 @@ profiles:
   - icon: at-symbol
     url: 'mailto:ravleen_bajaj@sfu.ca'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/AlexAIResearch
+  # - icon: brands/x
+  #  url: https://twitter.com/AlexAIResearch
   - icon: brands/github
     url: https://github.com/alexjohnsonai
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/alexjohnsonai/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=alexjohnson
-  - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
+ # - icon: academicons/google-scholar
+ #  url: https://scholar.google.com/citations?user=alexjohnson
+ # - icon: academicons/orcid
+ #   url: https://orcid.org/0000-0002-1825-0097
 
 interests:
   - Large Language Models
