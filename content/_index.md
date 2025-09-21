@@ -24,7 +24,7 @@ sections:
         interests: ''
     design:
       # Apply a gradient background
-      css_class: linear-gradient(180deg, #1a1a2e 0%, #16537e 50%, #c850c0 100%); 
+      css_class: hbx-bg-gradient-dark
       # Avatar customization
       avatar:
         size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
