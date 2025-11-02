@@ -69,10 +69,9 @@ education:
     icon: ""
     date_start: 2024-09-01
     date_end: Present
-    summary: |
-      GPA: 4.0/4.0
-
-  #    Specialized in machine learning and robotics.
+ #   summary: |
+ #     GPA: 4.0/4.0
+ #    Specialized in machine learning and robotics.
   - area: BS Statistics
     institution: University of Delhi
     icon: ""
