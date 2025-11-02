@@ -54,34 +54,17 @@ interests:
   - Astrostatistics
 
 education:
- # - area: PhD Computer Science (AI Focus)
- #   institution: Stanford University
- #   icon: ""
- #   date_start: 2015-09-01
- #   date_end: 2019-06-30
- #   summary: |
- #     Thesis on _Scaling Laws for Neural Language Models_. Supervised by Prof. Andrew Ng. Published 5 papers in NeurIPS and ICML, with 2 best paper awards.
- #   button:
- #     text: 'Read Thesis'
- #     url: 'https://example.com/thesis.pdf'
   - area: MS Statistics
     institution: Simon Fraser University
     icon: ""
     date_start: 2024-09-01
     date_end: Present
- #   summary: |
- #     GPA: 4.0/4.0
- #    Specialized in machine learning and robotics.
   - area: BS Statistics
     institution: University of Delhi
     icon: ""
     date_start: 2021-07-01
     date_end: 2024-07-31
-  #  summary: |
-  #    GPA: 3.9/4.0
-
-      Minored in Computer Science.
-
+    Minored in Computer Science.
 work:
   - position: Senior AI Research Scientist
     company_name: Meta AI
