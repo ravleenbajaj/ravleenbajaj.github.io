@@ -58,7 +58,7 @@ education:
     institution: Simon Fraser University
     icon: ""
     date_start: 2024-09-01
-    date_end: Present
+    date_end: 
 
   - area: BS Statistics
     institution: University of Delhi
