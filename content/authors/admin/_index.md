@@ -59,13 +59,15 @@ education:
     icon: ""
     date_start: 2024-09-01
     date_end: Present
+
   - area: BS Statistics
     institution: University of Delhi
     icon: ""
     date_start: 2021-07-01
     date_end: 2024-07-31
     summary: |
-       Minored in Computer Science.
+      Minored in Computer Science.
+
 work:
   - position: Senior AI Research Scientist
     company_name: Meta AI
