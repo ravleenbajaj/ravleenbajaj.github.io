@@ -1,9 +1,9 @@
 ---
 title: Annealed SMC for Bayesian Logistic Regression
-date: 2023-10-26
+date: 2025-10-14
 links:
   - type: site
-    url: https://github.com/pytorch/pytorch
+    url: https://github.com/ravleenbajaj/smc-breastcancer
 tags:
   - Julia
   - Distributions
