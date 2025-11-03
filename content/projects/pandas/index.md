@@ -1,6 +1,10 @@
 ---
 title: Emulation & Calibration Using GPs and Deep GPs 
-date: 02-11-2024
+date: 2024-11-02
+image:
+  filename: your-image-name.jpg  # Your image filename
+  focal_point: Smart
+  preview_only: false
 links:
   - type: site
     url: https://github.com/ravleenbajaj/Using_Gaussian_Process_for_Emulation
@@ -9,7 +13,5 @@ tags:
   - HugoBlox
   - Markdown
 ---
-
 Using GPs and Deep GPs for emulation and calibration (modularised and full approaches) for prediction and uncertainty quantification. Application: Using Deep Gaussian Processes in a stellar evolution model to capture/predict the changes in brightness of a given star due to underlying physical properties.
-
 <!--more-->
