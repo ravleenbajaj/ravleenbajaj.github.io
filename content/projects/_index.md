@@ -12,7 +12,8 @@ sections:
   - block: collection
     content:
       title: Selected Projects
-      text: 'A few of my most recent projects include:'
+      text: 'A few of my most recent projects are:'
+      filters:
         folders:
           - projects
     design:
