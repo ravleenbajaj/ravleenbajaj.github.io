@@ -154,6 +154,6 @@ languages:
 #      Recognized for contributions to scaling laws in deep learning.
 ---
 
-I am a Master of Science student at Simon Fraser University under the supervision of Dr. David Stenning. My  interests include bayesian inferencing and scallable sampling methods. 
+I am a Master of Science student at Simon Fraser University under the supervision of Dr. David Stenning. My  interests include Bayesian inferencing and scallable sampling methods. 
 
 I enjoy learning about faster and scallable algorithms with theoretical backing. Recently I've been learning about MCMC samplers, GPs and Deep GPs and am exploring their applications in astrostatistics.
