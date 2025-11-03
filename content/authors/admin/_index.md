@@ -23,7 +23,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: MSc Statistic Student
+role: MSc Statistics Student
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
