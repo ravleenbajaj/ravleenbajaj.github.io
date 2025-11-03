@@ -1,10 +1,10 @@
 ---
 title: Emulation & Calibration Using GPs and Deep GPs 
 date: 2024-11-02
-image:
-  filename: plots_calibration_with_kde.png  
-  focal_point: Smart
-  preview_only: false
+# image:
+#  filename: plots_calibration_with_kde.png  
+#  focal_point: Smart
+#  preview_only: false
 links:
   - type: site
     url: https://github.com/ravleenbajaj/Using_Gaussian_Process_for_Emulation
