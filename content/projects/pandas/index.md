@@ -1,6 +1,6 @@
 ---
 title: Emulation & Calibration Using GPs and Deep GPs 
-date: 2024
+date: 02-11-2024
 links:
   - type: site
     url: https://github.com/ravleenbajaj/Using_Gaussian_Process_for_Emulation
