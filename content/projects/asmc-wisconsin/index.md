@@ -1,6 +1,8 @@
 ---
 title: Annealed SMC for Bayesian Logistic Regression
 date: 2025-10-14
+image:
+  preview_only: true  # This hides the image from the detail page
 links:
   - type: site
     url: https://github.com/ravleenbajaj/smc-breastcancer
