@@ -5,7 +5,7 @@ links:
   - type: site
     url: https://github.com/ravleenbajaj/Using_Gaussian_Process_for_Emulation
 tags:
-  - Hugo
+  - Python
   - HugoBlox
   - Markdown
 ---
