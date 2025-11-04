@@ -1,6 +1,6 @@
 ---
 title: Small Scale Bias Reduction
-date: 2023-04-01
+date: 2025-04-01
 links:
   - type: site
     url: https://github.com/ravleenbajaj/Reduction-of-Small-Sample-Bias
