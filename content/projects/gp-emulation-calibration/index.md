@@ -13,5 +13,5 @@ tags:
   - NumPy
   - DeepGP
 ---
-Using GPs and Deep GPs for emulation and calibration (modularised and full approaches) for prediction and uncertainty quantification. Application: Using Deep Gaussian Processes in a stellar evolution model to capture/predict the changes in brightness of a given star due to underlying physical properties.
+Using GPs and Deep GPs for emulation and calibration (modularised and full approaches) for prediction of unknown parameter and uncertainty quantification. Application: Using Deep Gaussian Processes in a stellar evolution model to capture/predict the changes in brightness of a given star due to underlying physical properties.
 <!--more-->
