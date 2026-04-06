@@ -458,12 +458,15 @@
 
     <h2>Master's Thesis (Ongoing)</h2>
     <div class="entry">
-      <div class="entry-meta">2025–26 · Working Paper</div>
-      <div class="entry-title">Adaptive Posterior Concentration Under Misspecified Priors</div>
+      <div class="entry-meta">2025–Present</div> <!--  · Working Paper -->
+      <div class="entry-title">Emulation and Bayesian Calibration of Stellar Evolution Models Using Deep Gaussian Processes</div>
       <p class="entry-desc">
-        We study the asymptotic behaviour of the posterior distribution when the prior is
-        misspecified with respect to the true data-generating mechanism. We establish minimax-optimal
-        contraction rates and propose a data-driven correction scheme.
+       Stellar evolution models are fundamental tools in astrophysics; these models exhibit complex, nonstationary behavior, particularly in late evolutionary stages. 
+       This makes direct calibration to observational data challenging and computationally expensive. We develop a statistical framework for emulation and calibration of stellar evolution models using Deep Gaussian Processes (DeepGPs). 
+       To efficiently incorporate the high-dimensional and non-stationary simulator response surface, we fit a DeepGP emulator trained on simulated stellar evolution data. 
+       The emulator takes as inputs physical properties of a star and outputs the expected brightness in several wide wavelength bands of light. 
+       We adopt a multi-stage, modular approach to both emulation and calibration, allowing for pragmatic inference while retaining uncertainty quantification. 
+       Results demonstrate a robust framework, confirming that DeepGP emulation facilitates the capture of non-stationary structures in stellar evolution tracks.
       </p>
       <span class="tag accent">Bayesian Inference</span>
       <span class="tag">Minimax Theory</span>
@@ -477,14 +480,43 @@
     <h2>Other Projects</h2>
     <div class="entry">
       <div class="entry-meta">Project</div>
-      <div class="entry-title">Project title here</div>
+      <div class="entry-title">Annealed Sequential Monte Carlo for Bayesian Logistic Regression</div>
       <p class="entry-desc">
-        A short description of the project, methods used, and key findings or goals.
+        This project is a simple example that I was exploring while I was learning about SMC. 
+        It demonstrates how to use Sequential Monte Carlo with annealing to sample from posterior 
+        distributions of logistic regression coefficients. The algorithm gradually transitions from 
+        the prior distribution (β=0) to the posterior distribution (β=1), making it particularly 
+        effective for complex, multimodal posteriors.
       </p>
-      <span class="tag accent">Topic</span>
-      <span class="tag">Method</span>
+      <span class="tag accent">MCMC Samplers</span>
+      <span class="tag">Annealed SMC</span>
+      <br>
+      <small style="font-family: var(--mono); font-size: 0.75rem; color: var(--muted);">
+        <a href="https://github.com/ravleenbajaj/smc-breastcancer">GitHub</a>
+      </small>
     </div>
 
+     <div class="entry">
+      <div class="entry-meta">Project</div>
+      <div class="entry-title">Reduction of Small-Sample Bias of GLM Parameter Estimates</div>
+      <p class="entry-desc">
+        This project examines the performance of three bias reduction techniques for Maximum Likelihood Estimation in GLMs:
+
+        Asymptotic Bias Correction - Adjusts MLE estimates using first-order bias approximation
+        Firth's Method - Modifies the score function to reduce bias while preserving invariance properties
+        Log-F Prior Method - A Bayesian-inspired technique that allows incorporation of prior information
+      </p>
+      <span class="tag accent">Bias Reduction</span>
+      <span class="tag">Firth Method</span>
+      <br>
+      <small style="font-family: var(--mono); font-size: 0.75rem; color: var(--muted);">
+        With Samir Arora, Annie Yao
+        &nbsp;·&nbsp; <a href="STAT851-ProjectReport-pages.pdf">Report</a>
+        &nbsp;·&nbsp; <a href="https://github.com/ravleenbajaj/Reduction-of-Small-Sample-Bias">GitHub</a>
+      </small>
+   
+
+   <!--
     <h2>Software</h2>
     <div class="entry">
       <div class="entry-meta">Repository</div>
@@ -497,7 +529,7 @@
       </small>
     </div>
   </section>
-
+  -->
   <!-- NOTES PAGE -->
   <section class="page" id="notes">
     <h1>Notes</h1>
