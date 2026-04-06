@@ -8,7 +8,6 @@
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
   :root {
     --serif: 'EB Garamond', Georgia, serif;
     --mono: 'DM Mono', monospace;
@@ -23,9 +22,7 @@
     --link: #2d4a3e;
     --nav-w: 220px;
   }
-
   html { scroll-behavior: smooth; }
-
   body {
     font-family: var(--serif);
     background: var(--bg);
@@ -35,7 +32,6 @@
     display: flex;
     min-height: 100vh;
   }
-
   /* NAV */
   nav {
     position: fixed;
@@ -50,7 +46,6 @@
     background: var(--bg);
     z-index: 100;
   }
-
   .nav-name {
     font-size: 1.05rem;
     font-weight: 500;
@@ -58,7 +53,6 @@
     margin-bottom: 0.25rem;
     line-height: 1.3;
   }
-
   .nav-field {
     font-size: 0.82rem;
     color: var(--muted);
@@ -67,9 +61,7 @@
     letter-spacing: 0.03em;
     margin-bottom: 3rem;
   }
-
   nav ul { list-style: none; display: flex; flex-direction: column; gap: 0; }
-
   nav ul li a {
     font-family: var(--mono);
     font-size: 0.78rem;
@@ -83,16 +75,9 @@
     border-bottom: 1px solid transparent;
     transition: color 0.2s, border-color 0.2s;
   }
-
   nav ul li a:hover,
-  nav ul li a.active {
-    color: var(--accent);
-  }
-
-  nav ul li a.active {
-    border-bottom-color: var(--accent);
-  }
-
+  nav ul li a.active { color: var(--accent); }
+  nav ul li a.active { border-bottom-color: var(--accent); }
   .nav-footer {
     margin-top: auto;
     font-size: 0.72rem;
@@ -100,14 +85,12 @@
     color: var(--faint);
     font-weight: 300;
   }
-
   /* MAIN */
   main {
     margin-left: var(--nav-w);
     width: calc(100% - var(--nav-w));
     padding: 0;
   }
-
   /* PAGES */
   .page {
     display: none;
@@ -116,14 +99,11 @@
     max-width: 820px;
     animation: fadeIn 0.3s ease;
   }
-
   .page.active { display: block; }
-
   @keyframes fadeIn {
     from { opacity: 0; transform: translateY(8px); }
     to   { opacity: 1; transform: translateY(0); }
   }
-
   /* TYPOGRAPHY */
   h1 {
     font-size: 2.2rem;
@@ -132,7 +112,6 @@
     margin-bottom: 0.5rem;
     letter-spacing: -0.01em;
   }
-
   h2 {
     font-size: 1.1rem;
     font-weight: 400;
@@ -144,19 +123,14 @@
     padding-bottom: 0.6rem;
     border-bottom: 1px solid var(--border);
   }
-
   h3 {
     font-size: 1.05rem;
     font-weight: 500;
     margin-bottom: 0.2rem;
   }
-
   p { margin-bottom: 1.1rem; color: var(--text); }
-
   a { color: var(--link); text-decoration: underline; text-underline-offset: 3px; }
-
   em { font-style: italic; }
-
   /* BIO PAGE */
   .bio-header {
     display: flex;
@@ -164,7 +138,6 @@
     gap: 2.5rem;
     margin-bottom: 3rem;
   }
-
   .photo-placeholder {
     width: 120px;
     height: 120px;
@@ -177,18 +150,14 @@
     justify-content: center;
     overflow: hidden;
   }
-
   .photo-placeholder img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
   }
-
   .photo-placeholder svg { opacity: 0.3; }
-
   .bio-title h1 { margin-bottom: 0.3rem; }
-
   .bio-subtitle {
     font-family: var(--mono);
     font-size: 0.82rem;
@@ -197,13 +166,11 @@
     letter-spacing: 0.04em;
     margin-bottom: 1rem;
   }
-
   .bio-links {
     display: flex;
     gap: 1.25rem;
     flex-wrap: wrap;
   }
-
   .bio-links a {
     font-family: var(--mono);
     font-size: 0.75rem;
@@ -215,18 +182,14 @@
     padding-bottom: 1px;
     transition: color 0.2s, border-color 0.2s;
   }
-
   .bio-links a:hover { color: var(--accent); border-color: var(--accent); }
-
   /* ENTRY CARDS */
   .entry {
     margin-bottom: 2.2rem;
     padding-bottom: 2.2rem;
     border-bottom: 1px solid var(--border);
   }
-
   .entry:last-child { border-bottom: none; }
-
   .entry-meta {
     font-family: var(--mono);
     font-size: 0.75rem;
@@ -235,21 +198,18 @@
     letter-spacing: 0.04em;
     margin-bottom: 0.35rem;
   }
-
   .entry-title {
     font-size: 1.08rem;
     font-weight: 500;
     margin-bottom: 0.4rem;
     line-height: 1.4;
   }
-
   .entry-desc {
     font-size: 0.95rem;
     color: var(--muted);
     margin-bottom: 0.5rem;
     line-height: 1.65;
   }
-
   .tag {
     display: inline-block;
     font-family: var(--mono);
@@ -264,13 +224,11 @@
     margin-top: 4px;
     border: 1px solid var(--border);
   }
-
   .tag.accent {
     background: var(--accent-light);
     color: var(--accent);
     border-color: var(--accent-light);
   }
-
   /* NOTES */
   .note-grid {
     display: grid;
@@ -278,7 +236,6 @@
     gap: 1.25rem;
     margin-top: 0.5rem;
   }
-
   .note-card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -290,27 +247,23 @@
     color: var(--text);
     display: block;
   }
-
   .note-card:hover {
     border-color: var(--accent);
     background: var(--accent-light);
     color: var(--text);
     text-decoration: none;
   }
-
   .note-card h3 {
     font-size: 0.95rem;
     margin-bottom: 0.4rem;
     line-height: 1.35;
   }
-
   .note-card p {
     font-size: 0.82rem;
     color: var(--muted);
     margin-bottom: 0;
     line-height: 1.5;
   }
-
   /* TEACHING */
   .course {
     display: flex;
@@ -319,9 +272,7 @@
     padding-bottom: 2rem;
     border-bottom: 1px solid var(--border);
   }
-
   .course:last-child { border-bottom: none; }
-
   .course-term {
     font-family: var(--mono);
     font-size: 0.75rem;
@@ -331,10 +282,8 @@
     padding-top: 4px;
     min-width: 80px;
   }
-
   .course-body h3 { margin-bottom: 0.2rem; }
   .course-body p { font-size: 0.93rem; color: var(--muted); margin-bottom: 0.5rem; }
-
   /* MOBILE MENU */
   .hamburger {
     display: none;
@@ -352,14 +301,12 @@
     gap: 5px;
     padding: 0;
   }
-
   .hamburger span {
     display: block;
     width: 16px;
     height: 1px;
     background: var(--text);
   }
-
   @media (max-width: 768px) {
     nav {
       transform: translateX(-100%);
@@ -402,9 +349,9 @@
   <!-- BIO PAGE -->
   <section class="page active" id="bio">
     <div class="bio-header">
-     <div class="photo-placeholder" id="photoHolder">
-      <img src="profile-pic.jpg" alt="Ravleen Bajaj">
-     </div>
+      <div class="photo-placeholder" id="photoHolder">
+        <img src="profile-pic.jpg" alt="Ravleen Bajaj">
+      </div>
       <div class="bio-title">
         <h1>Ravleen Bajaj</h1>
         <div class="bio-subtitle">Graduate Student &middot; SFU Statistics</div>
@@ -415,7 +362,6 @@
         </div>
       </div>
     </div>
-
     <p>
       I am a MSc candidate in Statistics at Simon Fraser University, advised by Dr. David Stenning.
       My research lies at the intersection of <em>Bayesian inference</em>, <em>fast approximation methods</em>,
@@ -458,19 +404,24 @@
 
     <h2>Master's Thesis (Ongoing)</h2>
     <div class="entry">
-      <div class="entry-meta">2025–Present</div> <!--  · Working Paper -->
+      <div class="entry-meta">2025–Present</div>
       <div class="entry-title">Emulation and Bayesian Calibration of Stellar Evolution Models Using Deep Gaussian Processes</div>
       <p class="entry-desc">
-       Stellar evolution models are fundamental tools in astrophysics; these models exhibit complex, nonstationary behavior, particularly in late evolutionary stages. 
-       This makes direct calibration to observational data challenging and computationally expensive. We develop a statistical framework for emulation and calibration of stellar evolution models using Deep Gaussian Processes (DeepGPs). 
-       To efficiently incorporate the high-dimensional and non-stationary simulator response surface, we fit a DeepGP emulator trained on simulated stellar evolution data. 
-       The emulator takes as inputs physical properties of a star and outputs the expected brightness in several wide wavelength bands of light. 
-       We adopt a multi-stage, modular approach to both emulation and calibration, allowing for pragmatic inference while retaining uncertainty quantification. 
-       Results demonstrate a robust framework, confirming that DeepGP emulation facilitates the capture of non-stationary structures in stellar evolution tracks.
+        Stellar evolution models are fundamental tools in astrophysics; these models exhibit complex,
+        nonstationary behavior, particularly in late evolutionary stages. This makes direct calibration
+        to observational data challenging and computationally expensive. We develop a statistical
+        framework for emulation and calibration of stellar evolution models using Deep Gaussian Processes
+        (DeepGPs). To efficiently incorporate the high-dimensional and non-stationary simulator response
+        surface, we fit a DeepGP emulator trained on simulated stellar evolution data. The emulator takes
+        as inputs physical properties of a star and outputs the expected brightness in several wide
+        wavelength bands of light. We adopt a multi-stage, modular approach to both emulation and
+        calibration, allowing for pragmatic inference while retaining uncertainty quantification.
+        Results demonstrate a robust framework, confirming that DeepGP emulation facilitates the capture
+        of non-stationary structures in stellar evolution tracks.
       </p>
-      <span class="tag accent">Bayesian Inference</span>
-      <span class="tag">Minimax Theory</span>
-      <span class="tag">Asymptotics</span>
+      <span class="tag accent">Deep Gaussian Processes</span>
+      <span class="tag">Bayesian Calibration</span>
+      <span class="tag">Astrostatistics</span>
       <br>
       <small style="font-family: var(--mono); font-size: 0.75rem; color: var(--muted);">
         Supervised by: Dr. David Stenning
@@ -482,11 +433,11 @@
       <div class="entry-meta">Project</div>
       <div class="entry-title">Annealed Sequential Monte Carlo for Bayesian Logistic Regression</div>
       <p class="entry-desc">
-        This project is a simple example that I was exploring while I was learning about SMC. 
-        It demonstrates how to use Sequential Monte Carlo with annealing to sample from posterior 
-        distributions of logistic regression coefficients. The algorithm gradually transitions from 
-        the prior distribution (β=0) to the posterior distribution (β=1), making it particularly 
-        effective for complex, multimodal posteriors.
+        This project is a simple example that I was exploring while I was learning about SMC.
+        It demonstrates how to use Sequential Monte Carlo with annealing to sample from posterior
+        distributions of logistic regression coefficients. The algorithm gradually transitions from
+        the prior distribution (&beta;=0) to the posterior distribution (&beta;=1), making it
+        particularly effective for complex, multimodal posteriors.
       </p>
       <span class="tag accent">MCMC Samplers</span>
       <span class="tag">Annealed SMC</span>
@@ -496,15 +447,15 @@
       </small>
     </div>
 
-     <div class="entry">
+    <div class="entry">
       <div class="entry-meta">Project</div>
       <div class="entry-title">Reduction of Small-Sample Bias of GLM Parameter Estimates</div>
       <p class="entry-desc">
-        This project examines the performance of three bias reduction techniques for Maximum Likelihood Estimation in GLMs:
-
-        Asymptotic Bias Correction - Adjusts MLE estimates using first-order bias approximation
-        Firth's Method - Modifies the score function to reduce bias while preserving invariance properties
-        Log-F Prior Method - A Bayesian-inspired technique that allows incorporation of prior information
+        This project examines the performance of three bias reduction techniques for Maximum Likelihood
+        Estimation in GLMs: Asymptotic Bias Correction (adjusts MLE estimates using first-order bias
+        approximation), Firth's Method (modifies the score function to reduce bias while preserving
+        invariance properties), and Log-F Prior Method (a Bayesian-inspired technique that allows
+        incorporation of prior information).
       </p>
       <span class="tag accent">Bias Reduction</span>
       <span class="tag">Firth Method</span>
@@ -514,22 +465,10 @@
         &nbsp;·&nbsp; <a href="STAT851-ProjectReport-pages.pdf">Report</a>
         &nbsp;·&nbsp; <a href="https://github.com/ravleenbajaj/Reduction-of-Small-Sample-Bias">GitHub</a>
       </small>
-   
-
-   <!--
-    <h2>Software</h2>
-    <div class="entry">
-      <div class="entry-meta">Repository</div>
-      <div class="entry-title">Repository name here</div>
-      <p class="entry-desc">
-        A short description of the software, what it does, and who it is for.
-      </p>
-      <small style="font-family: var(--mono); font-size: 0.75rem; color: var(--muted);">
-        <a href="https://github.com/ravleenbajaj">GitHub</a>
-      </small>
     </div>
+
   </section>
-  -->
+
   <!-- NOTES PAGE -->
   <section class="page" id="notes">
     <h1>Notes</h1>
