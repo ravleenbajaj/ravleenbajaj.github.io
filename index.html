@@ -21,14 +21,6 @@
     --accent-light: #e8eeeb;
     --link: #2d4a3e;
     --nav-w: 220px;
-   /* Source grid for notes landing */
-.source-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; margin-top: 1.5rem; }
-.source-card { background: var(--surface); border: 1px solid var(--border); border-radius: 3px; padding: 1.5rem 1.5rem 1.25rem; cursor: pointer; text-align: left; transition: border-color 0.2s, background 0.2s; }
-.source-card:hover { border-color: var(--accent); background: var(--accent-light); }
-.source-card .card-label { font-family: var(--mono); font-size: 0.68rem; font-weight: 300; letter-spacing: 0.08em; text-transform: uppercase; color: var(--faint); margin-bottom: 0.5rem; display: block; }
-.back-btn { font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); background: none; border: none; cursor: pointer; padding: 0; margin-bottom: 2.5rem; display: flex; align-items: center; gap: 0.4rem; }
-.back-btn:hover { color: var(--accent); }
-.part-label { font-family: var(--mono); font-size: 0.68rem; font-weight: 300; letter-spacing: 0.08em; text-transform: uppercase; color: var(--faint); margin-bottom: 0.5rem; display: block; }
   }
   html { scroll-behavior: smooth; }
   body {
@@ -272,6 +264,64 @@
     margin-bottom: 0;
     line-height: 1.5;
   }
+  /* NOTES LANDING */
+  .source-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+  }
+  .source-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 1.5rem 1.5rem 1.25rem;
+    cursor: pointer;
+    text-align: left;
+    transition: border-color 0.2s, background 0.2s;
+    width: 100%;
+    font-family: var(--serif);
+  }
+  .source-card:hover { border-color: var(--accent); background: var(--accent-light); }
+  .source-card .card-label {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--faint);
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  .source-card h3 { font-size: 1.05rem; font-weight: 500; margin-bottom: 0.3rem; }
+  .source-card p { font-size: 0.85rem; color: var(--muted); margin-bottom: 0; line-height: 1.5; }
+  .back-btn {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: color 0.2s;
+  }
+  .back-btn:hover { color: var(--accent); }
+  .part-label {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--faint);
+    margin-bottom: 0.5rem;
+    display: block;
+  }
   /* TEACHING */
   .course {
     display: flex;
@@ -476,46 +526,200 @@
     </div>
   </section>
 
-<!-- NOTES PAGE -->
-<section class="page" id="notes">
-  <div id="notes-home">
-    <h1>Notes</h1>
-    <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 2.5rem;">
-      Expository notes, proofs, and reading material I have written for my own understanding or for courses.
-    </p>
-    <div class="source-grid">
-      <button class="source-card" onclick="showNotes('stat350')">
-        <div class="card-label">SFU · Graduate</div>
-        <h3>STAT 350</h3>
-        <p>Linear Models in Applied Statistics — tutorial slides and worked examples</p>
-      </button>
-      <button class="source-card" onclick="showNotes('bda')">
-        <div class="card-label">Textbook</div>
-        <h3>Bayesian Data Analysis</h3>
-        <p>Gelman et al. — chapter-by-chapter notes organized by part</p>
-      </button>
+  <!-- NOTES PAGE -->
+  <section class="page" id="notes">
+
+    <!-- Landing -->
+    <div id="notes-home">
+      <h1>Notes</h1>
+      <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 2.5rem;">
+        Expository notes, proofs, and reading material I have written for my own understanding or for courses.
+      </p>
+      <div class="source-grid">
+        <button class="source-card" onclick="showNotes('stat350')">
+          <span class="card-label">SFU · Undergraduate</span>
+          <h3>STAT 350</h3>
+          <p>Linear Models in Applied Statistics — tutorial slides and worked examples</p>
+        </button>
+        <button class="source-card" onclick="showNotes('bda')">
+          <span class="card-label">Textbook</span>
+          <h3>Bayesian Data Analysis</h3>
+          <p>Gelman et al. — chapter-by-chapter notes organized by part</p>
+        </button>
+      </div>
     </div>
-  </div>
 
-  <div id="notes-stat350" class="notes-subpage" style="display:none;">
-    <button class="back-btn" onclick="showNotesHome()">← Notes</button>
-    <h1>STAT 350</h1>
-    <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 2.5rem;">
-      Tutorial slides from STAT 350 — Linear Models in Applied Statistics. Corrections are welcome :)
-    </p>
-    <!-- ... all the existing tutorial sections ... -->
-  </div>
+    <!-- STAT 350 subpage -->
+    <div id="notes-stat350" class="notes-subpage" style="display:none;">
+      <button class="back-btn" onclick="showNotesHome()">← Notes</button>
+      <h1>STAT 350</h1>
+      <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 2.5rem;">
+        Tutorial slides from STAT 350 — Linear Models in Applied Statistics. Corrections are welcome :)
+      </p>
 
-  <div id="notes-bda" class="notes-subpage" style="display:none;">
-    <button class="back-btn" onclick="showNotesHome()">← Notes</button>
-    <h1>Bayesian Data Analysis</h1>
-    <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 2.5rem;">
-      Gelman, Carlin, Stern, Dunson, Vehtari &amp; Rubin. Chapter notes organized by part. This page is under construction.
-    </p>
-    <!-- ... BDA part sections ... -->
-  </div>
-</section>
- 
+      <h2>Simple Linear Regression</h2>
+      <div class="note-grid">
+        <a class="note-card" href="STAT350-Tutorial1.pdf">
+          <h3>Tutorial 1</h3>
+          <p>Introduction to simple linear regression</p>
+        </a>
+        <a class="note-card" href="STAT350-Tutorial2.pdf">
+          <h3>Tutorial 2</h3>
+          <p>Inference and hypothesis testing in SLR</p>
+        </a>
+        <a class="note-card" href="STAT350-Tutorial3.pdf">
+          <h3>Tutorial 3</h3>
+          <p>Diagnostics and residual analysis</p>
+        </a>
+      </div>
+
+      <h2>Multiple Linear Regression</h2>
+      <div class="note-grid">
+        <a class="note-card" href="STAT350-Tutorial4.pdf">
+          <h3>Tutorial 4</h3>
+          <p>MLR setup and parameter interpretation</p>
+        </a>
+        <a class="note-card" href="STAT350-Tutorial5.pdf">
+          <h3>Tutorial 5</h3>
+          <p>Matrix representation of linear models</p>
+        </a>
+        <a class="note-card" href="STAT350-Tutorial6.pdf">
+          <h3>Tutorial 6</h3>
+          <p>Inference in multiple regression</p>
+        </a>
+      </div>
+
+      <h2>Model Complexity</h2>
+      <div class="note-grid">
+        <a class="note-card" href="STAT350-Tutorial7.pdf">
+          <h3>Tutorial 7</h3>
+          <p>Interaction effects and their interpretation</p>
+        </a>
+        <a class="note-card" href="STAT350-Tutorial8.pdf">
+          <h3>Tutorial 8</h3>
+          <p>Polynomial terms and nonlinear effects</p>
+        </a>
+        <a class="note-card" href="STAT350-Tutorial9.pdf">
+          <h3>Tutorial 9</h3>
+          <p>Model building strategies</p>
+        </a>
+      </div>
+
+      <h2>Collinearity &amp; Model Assessment</h2>
+      <div class="note-grid">
+        <a class="note-card" href="STAT350-Tutorial10.pdf">
+          <h3>Tutorial 10</h3>
+          <p>Multicollinearity and its consequences</p>
+        </a>
+        <a class="note-card" href="STAT350-Tutorial11.pdf">
+          <h3>Tutorial 11</h3>
+          <p>Variance inflation factors (VIF)</p>
+        </a>
+        <a class="note-card" href="STAT350-Tutorial12.pdf">
+          <h3>Tutorial 12</h3>
+          <p>Model selection and assessment</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- BDA subpage -->
+    <div id="notes-bda" class="notes-subpage" style="display:none;">
+      <button class="back-btn" onclick="showNotesHome()">← Notes</button>
+      <h1>Bayesian Data Analysis</h1>
+      <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 2.5rem;">
+        Gelman, Carlin, Stern, Dunson, Vehtari &amp; Rubin. Chapter notes organized by part. This page is under construction.
+      </p>
+
+      <h2>Part I — Fundamentals of Bayesian Inference</h2>
+      <div class="note-grid">
+        <a class="note-card" href="#">
+          <span class="part-label">Chapter 1</span>
+          <h3>Probability and Inference</h3>
+          <p>The three steps of Bayesian analysis; basic probability notation</p>
+        </a>
+        <a class="note-card" href="#">
+          <span class="part-label">Chapter 2</span>
+          <h3>Single-Parameter Models</h3>
+          <p>Binomial, Poisson, normal models; conjugate priors</p>
+        </a>
+        <a class="note-card" href="#">
+          <span class="part-label">Chapter 3</span>
+          <h3>Multi-Parameter Models</h3>
+          <p>Normal with unknown mean and variance; multinomial models</p>
+        </a>
+        <a class="note-card" href="#">
+          <span class="part-label">Chapter 4</span>
+          <h3>Asymptotics &amp; Connections to Non-Bayesian Approaches</h3>
+          <p>Normal approximation; frequentist properties of Bayesian inference</p>
+        </a>
+        <a class="note-card" href="#">
+          <span class="part-label">Chapter 5</span>
+          <h3>Hierarchical Models</h3>
+          <p>Exchangeability; hyperpriors; shrinkage and pooling</p>
+        </a>
+      </div>
+
+      <h2>Part II — Fundamentals of Bayesian Data Analysis</h2>
+      <div class="note-grid">
+        <a class="note-card" href="#">
+          <span class="part-label">Chapter 6</span>
+          <h3>Model Checking</h3>
+          <p>Posterior predictive checks; sensitivity analysis</p>
+        </a>
+        <a class="note-card" href="#">
+          <span class="part-label">Chapter 7</span>
+          <h3>Evaluating, Comparing &amp; Expanding Models</h3>
+          <p>Cross-validation; information criteria; Bayes factors</p>
+        </a>
+        <a class="note-card" href="#">
+          <span class="part-label">Chapter 8</span>
+          <h3>Modeling Accounting for Data Collection</h3>
+          <p>Ignorability; sample surveys; censoring and truncation</p>
+        </a>
+        <a class="note-card" href="#">
+          <span class="part-label">Chapter 9</span>
+          <h3>Decision Analysis</h3>
+          <p>Bayesian decision theory; utility functions; optimal actions</p>
+        </a>
+        <a class="note-card" href="#">
+          <span class="part-label">Chapter 10</span>
+          <h3>Introduction to Bayesian Computation</h3>
+          <p>Numerical integration; direct and indirect simulation methods</p>
+        </a>
+      </div>
+
+      <h2>Part III — Advanced Computation</h2>
+      <div class="note-grid">
+        <a class="note-card" href="#">
+          <span class="part-label">Chapter 11</span>
+          <h3>Basics of Markov Chain Simulation</h3>
+          <p>Metropolis-Hastings; Gibbs sampling; convergence diagnostics</p>
+        </a>
+        <a class="note-card" href="#">
+          <span class="part-label">Chapter 12</span>
+          <h3>Computationally Efficient Simulation</h3>
+          <p>Hamiltonian Monte Carlo; slice sampling; adaptive methods</p>
+        </a>
+        <a class="note-card" href="#">
+          <span class="part-label">Chapter 13</span>
+          <h3>Modal and Distributional Approximations</h3>
+          <p>Laplace approximation; variational Bayes; EP</p>
+        </a>
+        <a class="note-card" href="#">
+          <span class="part-label">Chapter 14</span>
+          <h3>Introduction to Regression Models</h3>
+          <p>Bayesian linear regression; prior specification; prediction</p>
+        </a>
+        <a class="note-card" href="#">
+          <span class="part-label">Chapter 15</span>
+          <h3>Hierarchical Linear Models</h3>
+          <p>Multilevel regression; partial pooling; random effects</p>
+        </a>
+      </div>
+    </div>
+
+  </section>
+
   <!-- BLOG PAGE -->
   <section class="page" id="blog">
     <h1>Blog</h1>
@@ -523,7 +727,6 @@
       Occasional writing on statistics, research life, and things I find interesting.
       Not peer-reviewed. Opinions are my own. This page is under construction.
     </p>
-    <!-- blog entries hidden until ready -->
   </section>
 
   <!-- TEACHING PAGE -->
@@ -567,7 +770,7 @@
       <div class="course-body">
         <h3>STAT Workshop: STAT 100 - Statistics in Everyday Life, STAT 201 - Statistics for the Life Sciences, STAT 270 - Introduction to Probability and Statistics</h3>
         <p>
-          TA in the STAT workshop, a drop-in facility for students covering introductory Statistics courses. 
+          TA in the STAT workshop, a drop-in facility for students covering introductory Statistics courses.
           I worked on resolving queries, helping students build concepts, and discussing marking and exam solutions.
         </p>
         <span class="tag accent">Undergraduate</span>
@@ -591,6 +794,8 @@
     if (target) target.classList.add('active');
     links.forEach(l => { if (l.dataset.page === id) l.classList.add('active'); });
     window.scrollTo(0, 0);
+    // Reset notes to home whenever nav is used
+    if (id === 'notes') showNotesHome();
   }
 
   links.forEach(link => {
@@ -608,17 +813,19 @@
       nav.classList.remove('open');
     }
   });
- function showNotes(id) {
-  document.getElementById('notes-home').style.display = 'none';
-  document.querySelectorAll('.notes-subpage').forEach(el => el.style.display = 'none');
-  document.getElementById('notes-' + id).style.display = 'block';
-  window.scrollTo(0, 0);
-}
-function showNotesHome() {
-  document.getElementById('notes-home').style.display = 'block';
-  document.querySelectorAll('.notes-subpage').forEach(el => el.style.display = 'none');
-  window.scrollTo(0, 0);
-}
+
+  function showNotes(id) {
+    document.getElementById('notes-home').style.display = 'none';
+    document.querySelectorAll('.notes-subpage').forEach(el => el.style.display = 'none');
+    document.getElementById('notes-' + id).style.display = 'block';
+    window.scrollTo(0, 0);
+  }
+
+  function showNotesHome() {
+    document.getElementById('notes-home').style.display = 'block';
+    document.querySelectorAll('.notes-subpage').forEach(el => el.style.display = 'none');
+    window.scrollTo(0, 0);
+  }
 </script>
 </body>
 </html>
