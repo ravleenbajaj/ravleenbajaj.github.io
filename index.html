@@ -264,7 +264,7 @@
     margin-bottom: 0;
     line-height: 1.5;
   }
-  /* NOTES LANDING */
+  /* SOURCE / BLOG LANDING GRID */
   .source-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -295,6 +295,7 @@
   }
   .source-card h3 { font-size: 1.05rem; font-weight: 500; margin-bottom: 0.3rem; }
   .source-card p { font-size: 0.85rem; color: var(--muted); margin-bottom: 0; line-height: 1.5; }
+  /* BACK BUTTON */
   .back-btn {
     font-family: var(--mono);
     font-size: 0.75rem;
@@ -312,6 +313,26 @@
     transition: color 0.2s;
   }
   .back-btn:hover { color: var(--accent); }
+  /* BLOG POST BODY */
+  .blog-body {
+    margin-top: 2rem;
+    border-top: 1px solid var(--border);
+    padding-top: 2rem;
+  }
+  .blog-body p { font-size: 1rem; line-height: 1.85; margin-bottom: 1.3rem; }
+  .blog-body h3 {
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin: 2.5rem 0 0.75rem;
+    font-family: var(--serif);
+  }
+  .blog-body blockquote {
+    border-left: 2px solid var(--border);
+    margin: 1.5rem 0;
+    padding: 0.25rem 0 0.25rem 1.25rem;
+    color: var(--muted);
+    font-style: italic;
+  }
   .part-label {
     font-family: var(--mono);
     font-size: 0.68rem;
@@ -366,10 +387,7 @@
     background: var(--text);
   }
   @media (max-width: 768px) {
-    nav {
-      transform: translateX(-100%);
-      transition: transform 0.3s ease;
-    }
+    nav { transform: translateX(-100%); transition: transform 0.3s ease; }
     nav.open { transform: translateX(0); box-shadow: 4px 0 24px rgba(0,0,0,0.08); }
     main { margin-left: 0; width: 100%; }
     .page { padding: 4rem 1.5rem 4rem; }
@@ -554,20 +572,20 @@
       <button class="back-btn" onclick="showNotesHome()">← Notes</button>
       <h1>STAT 350</h1>
       <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 2.5rem;">
-        Tutorial slides from STAT 350 — Linear Models in Applied Statistics. This page is under construction, you may not be able to view all/any of the slides, they will be available in the first half of April 2026. Feel free to email me for urgent assistance. 
+        Tutorial slides from STAT 350 — Linear Models in Applied Statistics. Corrections are welcome :)
       </p>
 
       <h2>Simple Linear Regression</h2>
       <div class="note-grid">
-        <a class="note-card" href="STAT350-Tutorial1.pdf">
+        <a class="note-card" href="STAT350-Tutorials/STAT350_Tutorial1.pdf">
           <h3>Tutorial 1</h3>
           <p>Introduction to simple linear regression</p>
         </a>
-        <a class="note-card" href="STAT350-Tutorial2.pdf">
+        <a class="note-card" href="STAT350-Tutorials/STAT350_Tutorial2.pdf">
           <h3>Tutorial 2</h3>
           <p>Inference and hypothesis testing in SLR</p>
         </a>
-        <a class="note-card" href="STAT350-Tutorial3.pdf">
+        <a class="note-card" href="STAT350-Tutorials/STAT350_Tutorial3.pdf">
           <h3>Tutorial 3</h3>
           <p>Diagnostics and residual analysis</p>
         </a>
@@ -575,15 +593,15 @@
 
       <h2>Multiple Linear Regression</h2>
       <div class="note-grid">
-        <a class="note-card" href="STAT350-Tutorial4.pdf">
+        <a class="note-card" href="STAT350-Tutorials/STAT350_Tutorial4.pdf">
           <h3>Tutorial 4</h3>
           <p>MLR setup and parameter interpretation</p>
         </a>
-        <a class="note-card" href="STAT350-Tutorial5.pdf">
+        <a class="note-card" href="STAT350-Tutorials/STAT350_Tutorial5.pdf">
           <h3>Tutorial 5</h3>
           <p>Matrix representation of linear models</p>
         </a>
-        <a class="note-card" href="STAT350-Tutorial6.pdf">
+        <a class="note-card" href="STAT350-Tutorials/STAT350_Tutorial6.pdf">
           <h3>Tutorial 6</h3>
           <p>Inference in multiple regression</p>
         </a>
@@ -591,15 +609,15 @@
 
       <h2>Model Complexity</h2>
       <div class="note-grid">
-        <a class="note-card" href="STAT350-Tutorial7.pdf">
+        <a class="note-card" href="STAT350-Tutorials/STAT350_Tutorial7.pdf">
           <h3>Tutorial 7</h3>
           <p>Interaction effects and their interpretation</p>
         </a>
-        <a class="note-card" href="STAT350-Tutorial8.pdf">
+        <a class="note-card" href="STAT350-Tutorials/STAT350_Tutorial8.pdf">
           <h3>Tutorial 8</h3>
           <p>Polynomial terms and nonlinear effects</p>
         </a>
-        <a class="note-card" href="STAT350-Tutorial9.pdf">
+        <a class="note-card" href="STAT350-Tutorials/STAT350_Tutorial9.pdf">
           <h3>Tutorial 9</h3>
           <p>Model building strategies</p>
         </a>
@@ -607,15 +625,15 @@
 
       <h2>Collinearity &amp; Model Assessment</h2>
       <div class="note-grid">
-        <a class="note-card" href="STAT350-Tutorial10.pdf">
+        <a class="note-card" href="STAT350-Tutorials/STAT350_Tutorial10.pdf">
           <h3>Tutorial 10</h3>
           <p>Multicollinearity and its consequences</p>
         </a>
-        <a class="note-card" href="STAT350-Tutorial11.pdf">
+        <a class="note-card" href="STAT350-Tutorials/STAT350_Tutorial11.pdf">
           <h3>Tutorial 11</h3>
           <p>Variance inflation factors (VIF)</p>
         </a>
-        <a class="note-card" href="STAT350-Tutorial12.pdf">
+        <a class="note-card" href="STAT350-Tutorials/STAT350_Tutorial12.pdf">
           <h3>Tutorial 12</h3>
           <p>Model selection and assessment</p>
         </a>
@@ -722,11 +740,263 @@
 
   <!-- BLOG PAGE -->
   <section class="page" id="blog">
-    <h1>Blog</h1>
-    <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 2.5rem;">
-      Occasional writing on statistics, research life, and things I find interesting.
-      Not peer-reviewed. Opinions are my own. This page is under construction.
-    </p>
+
+    <!-- Blog landing -->
+    <div id="blog-home">
+      <h1>Blog</h1>
+      <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 2.5rem;">
+        Occasional writing on statistics, research life, and things I find interesting.
+        Not peer-reviewed. Opinions are my own.
+      </p>
+
+      <div class="entry">
+        <div class="entry-meta">March 2026 &middot; 6 min read</div>
+        <div class="entry-title">
+          <a href="#" onclick="showBlog('priors'); return false;">
+            What your prior is really saying — and why it matters more than you think
+          </a>
+        </div>
+        <p class="entry-desc">
+          A prior is not just a technical formality — it is a statement about the world before you
+          look at the data. Most of us pick priors carelessly. This post is about why that matters,
+          and how to think about it more carefully.
+        </p>
+        <span class="tag">Bayesian</span>
+        <span class="tag">Opinion</span>
+      </div>
+
+      <div class="entry">
+        <div class="entry-meta">February 2026 &middot; 8 min read</div>
+        <div class="entry-title">
+          <a href="#" onclick="showBlog('gradschool'); return false;">
+            Things I wish someone had told me before starting a statistics PhD
+          </a>
+        </div>
+        <p class="entry-desc">
+          From reading papers to managing your advisor relationship to the loneliness of the
+          first year — a collection of honest observations from someone still figuring it out.
+        </p>
+        <span class="tag">Graduate School</span>
+        <span class="tag">Advice</span>
+      </div>
+
+      <div class="entry">
+        <div class="entry-meta">January 2026 &middot; 5 min read</div>
+        <div class="entry-title">
+          <a href="#" onclick="showBlog('mcmc'); return false;">
+            MCMC in plain language: why we simulate instead of integrate
+          </a>
+        </div>
+        <p class="entry-desc">
+          High-dimensional integrals are hard. Sampling from distributions is surprisingly
+          easier. This post builds the intuition for why Markov chain Monte Carlo works,
+          without any measure theory.
+        </p>
+        <span class="tag">MCMC</span>
+        <span class="tag">Explainer</span>
+      </div>
+    </div>
+
+    <!-- Blog post: Priors -->
+    <div id="blog-priors" class="blog-subpage" style="display:none;">
+      <button class="back-btn" onclick="showBlogHome()">← Blog</button>
+      <div class="entry-meta">March 2026 &middot; 6 min read</div>
+      <h1 style="margin-bottom: 1rem;">What your prior is really saying — and why it matters more than you think</h1>
+      <span class="tag">Bayesian</span>
+      <span class="tag">Opinion</span>
+
+      <div class="blog-body">
+        <p>
+          Every time you run a Bayesian model, you make a choice. Before a single data point is seen,
+          you decide what values of your parameter are plausible, which are unlikely, and which are
+          essentially impossible. This choice is the prior distribution, and it is far more consequential
+          than most applied analysts treat it.
+        </p>
+        <p>
+          The common attitude is: pick something vague and move on. A flat prior, a wide normal, a
+          half-Cauchy for scale parameters — the folklore says that with enough data, the prior washes
+          out anyway. And while this is technically true in the limit, "enough data" is doing a lot of
+          work in that sentence. In the settings most of us actually work in — small samples,
+          high-dimensional parameter spaces, noisy measurements — the prior never fully disappears.
+        </p>
+
+        <h3>What a prior actually encodes</h3>
+        <p>
+          A prior is a probability distribution over the parameter space. But it is also, implicitly,
+          a distribution over the data you expect to see. This is what posterior predictive checks are
+          really probing: not whether the model fits the observed data, but whether the model, including
+          the prior, could have plausibly generated data like what you observed.
+        </p>
+        <p>
+          When you put a flat prior on a regression coefficient, you are saying that a coefficient of
+          1,000 is just as plausible before seeing data as a coefficient of 0.01. For most real-world
+          problems, that is an absurd belief. It is not uninformative — it is misinformative.
+        </p>
+
+        <h3>The shrinkage perspective</h3>
+        <p>
+          One useful way to think about priors is through the lens of regularization. A normal prior
+          centered at zero with variance &sigma;&sup2; corresponds exactly to ridge regression with
+          penalty &lambda; = 1/&sigma;&sup2;. A Laplace prior gives the LASSO. From this angle,
+          the prior is not expressing metaphysical uncertainty — it is encoding a belief that most
+          effects are small, which is usually a reasonable thing to believe.
+        </p>
+        <p>
+          This connection between Bayesian priors and frequentist regularization is one of the most
+          practically useful ideas in modern statistics. It suggests that choosing a prior is not so
+          different from choosing a regularization strength — something practitioners do all the time
+          using cross-validation, without much philosophical anxiety.
+        </p>
+
+        <h3>What I actually do</h3>
+        <p>
+          My current practice is to start with weakly informative priors — priors that rule out
+          physically or scientifically impossible values while remaining broadly agnostic about the
+          plausible range. I then do prior predictive checks: simulate data from the prior and ask
+          whether those simulations look like anything I might plausibly observe. If they do not,
+          I revise the prior before touching the data.
+        </p>
+        <p>
+          This is not the only right approach. But it forces me to treat the prior as a genuine
+          modeling choice rather than a formality, and that shift in attitude has changed how I
+          think about every Bayesian analysis I run.
+        </p>
+      </div>
+    </div>
+
+    <!-- Blog post: Grad school -->
+    <div id="blog-gradschool" class="blog-subpage" style="display:none;">
+      <button class="back-btn" onclick="showBlogHome()">← Blog</button>
+      <div class="entry-meta">February 2026 &middot; 8 min read</div>
+      <h1 style="margin-bottom: 1rem;">Things I wish someone had told me before starting a statistics MSc</h1>
+      <span class="tag">Graduate School</span>
+      <span class="tag">Advice</span>
+
+      <div class="blog-body">
+        <p>
+          I am writing this from the middle of my second year, which means I am far enough in to
+          have made most of the classic mistakes, but close enough to the beginning that they still
+          sting. This is not a comprehensive guide. It is a set of observations I would have found
+          useful before I started.
+        </p>
+
+        <h3>Your relationship with confusion will change</h3>
+        <p>
+          In an undergraduate degree, confusion is usually a temporary state. You encounter something
+          unfamiliar, you read a chapter or watch a lecture, and the confusion resolves. Graduate work
+          is different. You will spend weeks, sometimes months, sitting with a problem that does not
+          yield. Learning to tolerate — and eventually to find something productive in — that sustained
+          uncertainty is probably the most important skill you will develop.
+        </p>
+        <p>
+          The shift I noticed in myself was moving from asking "do I understand this?" to asking "what
+          exactly is it that I do not understand?" The second question is more useful, and it is also
+          a sign that you are engaging with the material more seriously.
+        </p>
+
+        <h3>Read more than you think you need to</h3>
+        <p>
+          The instinct in graduate school is to read only what is directly relevant to your project.
+          This is efficient in the short term and limiting in the long term. Some of the most useful
+          things I have learned have come from reading papers that seemed adjacent or even irrelevant
+          to my work at the time.
+        </p>
+        <p>
+          A rough target: one paper per week that has nothing to do with your thesis. It does not need
+          to be a deep read. Skimming the abstract, introduction, and conclusions is enough to build
+          a sense of what is happening in the broader field.
+        </p>
+
+        <h3>Your advisor is not responsible for your motivation</h3>
+        <p>
+          This took me a while to understand. Advisors vary enormously in how much day-to-day guidance
+          they provide, but even the most hands-on advisor cannot supply the intrinsic motivation that
+          sustains research when things are not going well. That has to come from you.
+        </p>
+        <p>
+          What helped me was keeping a research journal — not a formal document, just a text file where
+          I wrote down what I tried, what did not work, and what I was curious about next. On bad days,
+          reading back through it reminded me that progress is real even when it does not feel like it.
+        </p>
+
+        <h3>Talk to other graduate students</h3>
+        <p>
+          This sounds obvious, but it is easy to underestimate how much you learn from informal
+          conversation with peers. Not just about statistics — about how to navigate the program,
+          manage your time, deal with imposter syndrome, and find community in what can be an
+          isolating experience. The relationships you build in graduate school tend to be the
+          most durable professional ones you will have.
+        </p>
+      </div>
+    </div>
+
+    <!-- Blog post: MCMC -->
+    <div id="blog-mcmc" class="blog-subpage" style="display:none;">
+      <button class="back-btn" onclick="showBlogHome()">← Blog</button>
+      <div class="entry-meta">January 2026 &middot; 5 min read</div>
+      <h1 style="margin-bottom: 1rem;">MCMC in plain language: why we simulate instead of integrate</h1>
+      <span class="tag">MCMC</span>
+      <span class="tag">Explainer</span>
+
+      <div class="blog-body">
+        <p>
+          Bayesian inference requires computing posterior distributions. In simple cases — conjugate
+          models, low-dimensional parameter spaces — this can be done analytically. In almost every
+          interesting real-world case, it cannot. The integral is intractable.
+        </p>
+        <p>
+          Markov chain Monte Carlo is the family of algorithms that gets around this by not computing
+          the integral at all. Instead, it draws samples from the posterior distribution. If you have
+          enough samples, you can estimate any quantity of interest — the posterior mean, credible
+          intervals, the probability that a parameter exceeds some threshold — directly from the samples,
+          without ever writing down the normalizing constant.
+        </p>
+
+        <h3>Why sampling works</h3>
+        <p>
+          Suppose you want to know the expected value of some function f under a distribution &pi;.
+          If you can draw N independent samples x&sub1;, ..., x&#8345; from &pi;, then the sample
+          mean of f(x&#7522;) converges to the true expectation by the law of large numbers. This is
+          Monte Carlo integration, and it works in any number of dimensions — unlike grid-based
+          numerical integration, which becomes hopeless in more than a handful of dimensions.
+        </p>
+        <p>
+          The catch is that drawing independent samples from an arbitrary posterior distribution is
+          itself hard. This is where the Markov chain comes in.
+        </p>
+
+        <h3>The Markov chain idea</h3>
+        <p>
+          Instead of drawing independent samples, MCMC constructs a Markov chain — a sequence of
+          correlated samples — whose stationary distribution is the target posterior. If you run the
+          chain long enough, the samples behave as if they were drawn from the posterior, even though
+          they are not independent.
+        </p>
+        <p>
+          The Metropolis-Hastings algorithm is the classic example. At each step, you propose a move
+          to a new point in parameter space. You accept the move with a probability that depends on
+          the ratio of the posterior density at the proposed point to the density at the current point.
+          If the proposed point has higher density, you always accept. If it has lower density, you
+          sometimes accept anyway — this is what allows the chain to explore the whole distribution
+          rather than just climbing to the mode.
+        </p>
+
+        <h3>What this means in practice</h3>
+        <p>
+          Modern probabilistic programming languages — Stan, PyMC, NumPyro — implement sophisticated
+          variants of MCMC that are far more efficient than basic Metropolis-Hastings. Hamiltonian
+          Monte Carlo uses gradient information to propose moves that traverse the posterior more
+          efficiently. No-U-Turn Sampling (NUTS) automates the tuning of HMC so that you rarely
+          need to think about it directly.
+        </p>
+        <p>
+          But the core idea is unchanged from 1953, when Metropolis and colleagues first published it:
+          explore the target distribution by taking a carefully designed random walk through parameter
+          space, and collect samples along the way. It is an elegant solution to a genuinely hard problem.
+        </p>
+      </div>
+    </div>
+
   </section>
 
   <!-- TEACHING PAGE -->
@@ -768,10 +1038,11 @@
     <div class="course">
       <div class="course-term">2024–2025</div>
       <div class="course-body">
-        <h3>STAT Workshop: STAT 100 - Statistics in Everyday Life, STAT 201 - Statistics for the Life Sciences, STAT 270 - Introduction to Probability and Statistics</h3>
+        <h3>STAT Workshop: STAT 100, STAT 201, STAT 270</h3>
         <p>
-          TA in the STAT workshop, a drop-in facility for students covering introductory Statistics courses.
-          I worked on resolving queries, helping students build concepts, and discussing marking and exam solutions.
+          TA in the STAT workshop, a drop-in facility for students covering Statistics in Everyday Life,
+          Statistics for the Life Sciences, and Introduction to Probability and Statistics.
+          Resolving queries, helping students build concepts, and discussing marking and exam solutions.
         </p>
         <span class="tag accent">Undergraduate</span>
         <span class="tag">Probability</span>
@@ -794,8 +1065,8 @@
     if (target) target.classList.add('active');
     links.forEach(l => { if (l.dataset.page === id) l.classList.add('active'); });
     window.scrollTo(0, 0);
-    // Reset notes to home whenever nav is used
     if (id === 'notes') showNotesHome();
+    if (id === 'blog') showBlogHome();
   }
 
   links.forEach(link => {
@@ -814,6 +1085,7 @@
     }
   });
 
+  /* Notes navigation */
   function showNotes(id) {
     document.getElementById('notes-home').style.display = 'none';
     document.querySelectorAll('.notes-subpage').forEach(el => el.style.display = 'none');
@@ -824,6 +1096,20 @@
   function showNotesHome() {
     document.getElementById('notes-home').style.display = 'block';
     document.querySelectorAll('.notes-subpage').forEach(el => el.style.display = 'none');
+    window.scrollTo(0, 0);
+  }
+
+  /* Blog navigation */
+  function showBlog(id) {
+    document.getElementById('blog-home').style.display = 'none';
+    document.querySelectorAll('.blog-subpage').forEach(el => el.style.display = 'none');
+    document.getElementById('blog-' + id).style.display = 'block';
+    window.scrollTo(0, 0);
+  }
+
+  function showBlogHome() {
+    document.getElementById('blog-home').style.display = 'block';
+    document.querySelectorAll('.blog-subpage').forEach(el => el.style.display = 'none');
     window.scrollTo(0, 0);
   }
 </script>
