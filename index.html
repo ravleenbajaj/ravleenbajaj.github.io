@@ -533,6 +533,26 @@
 
     <h2>Other Projects</h2>
     <div class="entry">
+   <div class="entry-meta">Project</div>
+   <div class="entry-title">SimpleGPT: Autoregressive Language Model from Scratch in JAX</div>
+   <p class="entry-desc">
+     Implemented a GPT-style transformer from scratch in JAX and Flax, without
+     using any high-level model libraries. The architecture includes multi-head
+     causal self-attention, learned positional embeddings, and stacked transformer
+     blocks with pre-norm residual connections. Training uses a JIT-compiled loop
+     with <code>jax.value_and_grad</code>, AdamW, and cosine learning rate decay.
+     Trained a character-level model on the Tiny Shakespeare corpus (~1M tokens);
+     loss drops from 4.96 to 2.63 over 3000 steps with no significant overfitting.
+   </p>
+   <span class="tag accent">JAX</span>
+   <span class="tag">Transformers</span>
+   <span class="tag">Language Modelling</span>
+   <br>
+   <small style="font-family: var(--mono); font-size: 0.75rem; color: var(--muted);">
+     <a href="https://github.com/ravleenbajaj/SimpleGPT-Using-JAX">GitHub</a>
+   </small>
+ </div>
+    <div class="entry">
       <div class="entry-meta">Project</div>
       <div class="entry-title">Annealed Sequential Monte Carlo for Bayesian Logistic Regression</div>
       <p class="entry-desc">
