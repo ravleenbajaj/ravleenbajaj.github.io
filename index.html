@@ -540,7 +540,7 @@
      using any high-level model libraries. The architecture includes multi-head
      causal self-attention, learned positional embeddings, and stacked transformer
      blocks with pre-norm residual connections. Training uses a JIT-compiled loop
-     with <code>jax.value_and_grad</code>, AdamW, and cosine learning rate decay.
+     with jax.value_and_grad, AdamW, and cosine learning rate decay.
      Trained a character-level model on the Tiny Shakespeare corpus (~1M tokens);
      loss drops from 4.96 to 2.63 over 3000 steps with no significant overfitting.
    </p>
