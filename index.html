@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="bell-curve.png">
+<title>Ravleen Bajaj</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+
+<nav id="nav">
+  <div class="nav-name">Ravleen Bajaj</div>
+  <div class="nav-field"></div>
+  <ul>
+    <li><a href="index.html" class="active">Bio</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="notes.html">Notes</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="teaching.html">Teaching</a></li>
+  </ul>
+  <div class="nav-footer">Updated September 2026</div>
+  <div style="margin-top: 0.75rem; font-size: 0.65rem; font-family: var(--mono); color: var(--faint); font-weight: 300;">
+    <a href="https://www.flaticon.com/free-icons/gaussian-function" title="gaussian function icons" style="color: var(--faint); text-underline-offset: 2px;">Icon by Flaticon</a>
+  </div>
+</nav>
+
+<main>
+  <div class="page-content">
+    <div class="bio-header">
+      <div class="photo-placeholder">
+        <img src="profile-pic.jpg" alt="Ravleen Bajaj">
+      </div>
+      <div class="bio-title">
+        <h1>Ravleen Bajaj</h1>
+        <div class="bio-subtitle">Graduate Student &middot; SFU Statistics</div>
+        <div class="bio-links">
+          <a href="mailto:ravleen_bajaj@sfu.ca">Email</a>
+          <a href="RavleenB-CV.pdf">CV</a>
+          <a href="https://github.com/ravleenbajaj">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <p>
+      I am a MSc candidate in Statistics at Simon Fraser University, advised by Dr. David Stenning.
+      My research lies at the intersection of <em>Bayesian inference</em>, <em>fast approximation methods</em>,
+      and <em>scalable samplers</em>. I am interested in their applications in astrophysics. My current project involves
+      capturing the non-stationarity of stellar evolution tracks using Deep Gaussian Processes (Deep GPs).
+      I am broadly interested in developing principled statistical
+      methods that are computationally efficient and theoretically grounded.
+    </p>
+    <p>
+      I enjoy learning about faster and scalable algorithms with theoretical backing.
+      Recently I've been learning about MCMC samplers, GPs and Deep GPs and am exploring
+      their applications in astrostatistics.
+    </p>
+    <p>
+      Before my Master's, I completed a BSc in Statistics at the University of Delhi, India.
+      Outside of research, I enjoy hiking, swimming, and teaching. I have dabbled a bit into
+      cubing and some logical puzzles. I enjoy live music and my favourite thing to do is to
+      read on a sunny day.
+    </p>
+
+    <h2>News</h2>
+    <div class="entry">
+      <div class="entry-meta">September 2026</div>
+      <div class="entry-title">Applied Machine Learning Engineer Intern at <em>Shopify.</em></div>
+      <p class="entry-desc">I will be joining Shopify in Winter 2027.</p>
+    </div>
+    <div class="entry">
+      <div class="entry-meta">June 2026</div>
+      <div class="entry-title">Received Travel Award for presenting at the <em>Canadian Statistics Student Conference (CSSC)</em></div>
+      <small style="font-family: var(--mono); font-size: 0.75rem; color: var(--muted);"><a href="CSSC_2026_Poster.pdf">Poster</a></small>
+      <small style="font-family: var(--mono); font-size: 0.75rem; color: var(--muted);"><a href="poster-travel-award.jpg">Award Ceremony</a></small>
+    </div>
+    <div class="entry">
+      <div class="entry-meta">April 2026</div>
+      <div class="entry-title">Poster accepted at the <em>Canadian Statistics Student Conference (CSSC)</em></div>
+      <p class="entry-desc">I will be presenting some findings from my Master's research.</p>
+    </div>
+    <div class="entry">
+      <div class="entry-meta">December 2025</div>
+      <div class="entry-title">Awarded Graduate Fellowship — Spring 2026</div>
+      <p class="entry-desc">Support for my Master's research and academic pursuits.</p>
+    </div>
+    <div class="entry">
+      <div class="entry-meta">November 2025</div>
+      <div class="entry-title">Presented at <em>Canadian Celebration of Women in Computing Conference (CAN-CWiC)</em></div>
+      <p class="entry-desc">I presented a simulation study that motivated my Master's research in this presentation.</p>
+      <small style="font-family: var(--mono); font-size: 0.75rem; color: var(--muted);"><a href="can_cwic_slides.pdf">Slides</a></small>
+    </div>
+    <div class="entry">
+      <div class="entry-meta">April 2025</div>
+      <div class="entry-title">Awarded Graduate Fellowship — Summer 2025</div>
+      <p class="entry-desc">Support for my Master's research and academic pursuits.</p>
+    </div>
+  </div>
+</main>
+
+<script src="nav.js" defer></script>
+</body>
+</html>
