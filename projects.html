@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="bell-curve.png">
+<title>Projects — Ravleen Bajaj</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+
+<nav id="nav">
+  <div class="nav-name">Ravleen Bajaj</div>
+  <div class="nav-field"></div>
+  <ul>
+    <li><a href="index.html">Bio</a></li>
+    <li><a href="projects.html" class="active">Projects</a></li>
+    <li><a href="notes.html">Notes</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="teaching.html">Teaching</a></li>
+  </ul>
+  <div class="nav-footer">Updated September 2026</div>
+  <div style="margin-top: 0.75rem; font-size: 0.65rem; font-family: var(--mono); color: var(--faint); font-weight: 300;">
+    <a href="https://www.flaticon.com/free-icons/gaussian-function" title="gaussian function icons" style="color: var(--faint); text-underline-offset: 2px;">Icon by Flaticon</a>
+  </div>
+</nav>
+
+<main>
+  <div class="page-content">
+    <h1>Projects</h1>
+
+    <h2>Master's Thesis (Ongoing)</h2>
+    <div class="entry">
+      <div class="entry-meta">2025–Present</div>
+      <div class="entry-title">Emulation and Bayesian Calibration of Stellar Evolution Models Using Deep Gaussian Processes</div>
+      <p class="entry-desc">
+        Stellar evolution models are fundamental tools in astrophysics; these models exhibit complex,
+        nonstationary behavior, particularly in late evolutionary stages. This makes direct calibration
+        to observational data challenging and computationally expensive. We develop a statistical
+        framework for emulation and calibration of stellar evolution models using Deep Gaussian Processes
+        (DeepGPs). To efficiently incorporate the high-dimensional and non-stationary simulator response
+        surface, we fit a DeepGP emulator trained on simulated stellar evolution data. The emulator takes
+        as inputs physical properties of a star and outputs the expected brightness in several wide
+        wavelength bands of light. We adopt a multi-stage, modular approach to both emulation and
+        calibration, allowing for pragmatic inference while retaining uncertainty quantification.
+        Results demonstrate a robust framework, confirming that DeepGP emulation facilitates the capture
+        of non-stationary structures in stellar evolution tracks.
+      </p>
+      <span class="tag accent">Deep Gaussian Processes</span>
+      <span class="tag">Bayesian Calibration</span>
+      <span class="tag">Astrostatistics</span>
+      <br>
+      <small style="font-family: var(--mono); font-size: 0.75rem; color: var(--muted);">
+        Supervised by: Dr. David Stenning &nbsp;·&nbsp;
+        <a href="can_cwic_slides.pdf">Introductory Slides</a>
+        <a href="CSSC_2026_Poster.pdf">Poster</a>
+      </small>
+    </div>
+
+    <h2>Other Projects</h2>
+    <div class="entry">
+      <div class="entry-meta">Project</div>
+      <div class="entry-title">SimpleGPT: Autoregressive Language Model from Scratch in JAX</div>
+      <p class="entry-desc">
+        Implemented a GPT-style transformer from scratch in JAX and Flax, without
+        using any high-level model libraries. The architecture includes multi-head
+        causal self-attention, learned positional embeddings, and stacked transformer
+        blocks with pre-norm residual connections. Training uses a JIT-compiled loop
+        with jax.value_and_grad, AdamW, and cosine learning rate decay.
+        Trained a character-level model on the Tiny Shakespeare corpus (~1M tokens);
+        loss drops from 4.96 to 2.63 over 3000 steps with no significant overfitting.
+      </p>
+      <span class="tag accent">JAX</span>
+      <span class="tag">Transformers</span>
+      <span class="tag">Language Modelling</span>
+      <br>
+      <small style="font-family: var(--mono); font-size: 0.75rem; color: var(--muted);">
+        <a href="https://github.com/ravleenbajaj/SimpleGPT-Using-JAX">GitHub</a>
+      </small>
+    </div>
+
+    <div class="entry">
+      <div class="entry-meta">Project</div>
+      <div class="entry-title">Annealed Sequential Monte Carlo for Bayesian Logistic Regression</div>
+      <p class="entry-desc">
+        This project is a simple example that I was exploring while I was learning about SMC.
+        It demonstrates how to use Sequential Monte Carlo with annealing to sample from posterior
+        distributions of logistic regression coefficients. The algorithm gradually transitions from
+        the prior distribution (&beta;=0) to the posterior distribution (&beta;=1), making it
+        particularly effective for complex, multimodal posteriors.
+      </p>
+      <span class="tag accent">MCMC Samplers</span>
+      <span class="tag">Annealed SMC</span>
+      <br>
+      <small style="font-family: var(--mono); font-size: 0.75rem; color: var(--muted);">
+        <a href="https://github.com/ravleenbajaj/smc-breastcancer">GitHub</a>
+      </small>
+    </div>
+
+    <div class="entry">
+      <div class="entry-meta">Project</div>
+      <div class="entry-title">Reduction of Small-Sample Bias of GLM Parameter Estimates</div>
+      <p class="entry-desc">
+        This project examines the performance of three bias reduction techniques for Maximum Likelihood
+        Estimation in GLMs: Asymptotic Bias Correction (adjusts MLE estimates using first-order bias
+        approximation), Firth's Method (modifies the score function to reduce bias while preserving
+        invariance properties), and Log-F Prior Method (a Bayesian-inspired technique that allows
+        incorporation of prior information).
+      </p>
+      <span class="tag accent">Bias Reduction</span>
+      <span class="tag">Firth Method</span>
+      <br>
+      <small style="font-family: var(--mono); font-size: 0.75rem; color: var(--muted);">
+        With Samir Arora, Annie Yao
+        &nbsp;·&nbsp; <a href="STAT851-ProjectReport-pages.pdf">Report</a>
+        &nbsp;·&nbsp; <a href="https://github.com/ravleenbajaj/Reduction-of-Small-Sample-Bias">GitHub</a>
+      </small>
+    </div>
+  </div>
+</main>
+
+<script src="nav.js" defer></script>
+</body>
+</html>
